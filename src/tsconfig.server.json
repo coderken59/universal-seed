@@ -1,0 +1,7 @@
+{
+  "extends": "../tsconfig.json",
+  "angularCompilerOptions": {
+    "entryModule": "../src/app/server-app.module#ServerAppModule"
+  },
+  "exclude": []
+}

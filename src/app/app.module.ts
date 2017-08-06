@@ -1,16 +1,24 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { APP_BASE_HREF, CommonModule } from '@angular/common';
 
 import { AppComponent } from './app.component';
 
+import { HttpModule } from '@angular/http';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from '../features/home/home.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent, HomeComponent
   ],
   imports: [
-    BrowserModule
+    CommonModule,
+    RouterModule.forRoot([
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'lazy', loadChildren: '../features/+lazy/lazy.module#LazyModule' }
+    ])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  exports: [AppComponent]
 })
 export class AppModule { }
