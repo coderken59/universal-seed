@@ -1,9 +1,9 @@
 import { NgModule, APP_BOOTSTRAP_LISTENER, ApplicationRef } from '@angular/core';
 import { ServerModule } from '@angular/platform-server';
-import { ServerTransferStateModule } from '../modules/transfer-state/server-transfer-state.module';
+import { ServerTransferStateModule } from '../shared/transfer-state/server-transfer-state.module';
 import { AppComponent } from './app.component';
 import { AppModule } from './app.module';
-import { TransferState } from '../modules/transfer-state/transfer-state';
+import { TransferState } from '../shared/transfer-state/transfer-state';
 import { BrowserModule } from '@angular/platform-browser';
 
 export function onBootstrap(appRef: ApplicationRef, transferState: TransferState) {
@@ -21,7 +21,7 @@ export function onBootstrap(appRef: ApplicationRef, transferState: TransferState
   bootstrap: [AppComponent],
   imports: [
     BrowserModule.withServerTransition({
-      appId: 'universal'
+      appId: 'universal-seed'
     }),
     ServerModule,
     ServerTransferStateModule,

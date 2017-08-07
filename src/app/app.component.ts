@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TransferState } from '../modules/transfer-state/transfer-state';
+import { TransferState } from '../shared/transfer-state/transfer-state';
 import { REQUEST } from '@nguniversal/express-engine/tokens';
 
 @Component({
@@ -8,12 +8,11 @@ import { REQUEST } from '@nguniversal/express-engine/tokens';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+  title = 'Universal Seed';
 
   constructor(private cache: TransferState) { }
 
   ngOnInit() {
-    // This is an example
-    this.cache.set('message', 'Hello World');
+    this.cache.set('message', 'Hello Universal-Seed');
   }
 }

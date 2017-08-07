@@ -7,6 +7,9 @@ import { platformServer, renderModuleFactory } from '@angular/platform-server';
 import { ServerAppModule } from '../src/app/server-app.module';
 import { ngExpressEngine } from '@nguniversal/express-engine';
 import { ROUTES } from './routes';
+import { enableProdMode } from '@angular/core';
+
+enableProdMode();
 
 const app = express();
 

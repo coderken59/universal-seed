@@ -5,6 +5,9 @@
   <img src="https://cloud.githubusercontent.com/assets/1016365/10639063/138338bc-7806-11e5-8057-d34c75f3cafc.png" alt="Universal Angular" height="320"/>
 </p>
 
+## [Demo here](https://universal-seed.herokuapp.com/)
+
+
 ## Motivation (or why this project?)
 
 > [Please read this](https://medium.com/@wizardnet972/angular4-with-universal-seed-a477237a1995). 
@@ -12,7 +15,7 @@
 **`universal-seed`** is a seed project for Angular Universal apps following the common patterns and [best practices](https://angular.io/styleguide) in file and application organization, providing the following features:
 
 - Development using angular-cli.
-- Production mode with Universal and AOT.
+- Production mode with Universal and **Ahead-of-Time** compilation support.
 - Lazy loading of modules.
 - Angular cli support.
 

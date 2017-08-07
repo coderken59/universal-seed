@@ -1,6 +1,3 @@
-import { enableProdMode } from '@angular/core';
-enableProdMode();
-
 import * as normalizePort from 'normalize-port';
 import * as app from './app';
 

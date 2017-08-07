@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs/Observable';
-import { TransferState } from '../../modules/transfer-state/transfer-state';
+import { TransferState } from '../../shared/transfer-state/transfer-state';
 
 @Component({
     selector: 'app-home',
