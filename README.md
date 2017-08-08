@@ -7,7 +7,7 @@
 
 Provides fast, reliable, extensible starter and very much easy to use for the development of Server side rendering in Angular projects. [see the demo here](https://universal-seed.herokuapp.com/)
 
-> [Read here more about why I built this project?](https://medium.com/@wizardnet972/angular4-with-universal-seed-a477237a1995)
+> Read the whole story here: [https://medium.com/@wizardnet972/angular4-with-universal-seed-a477237a1995](https://medium.com/@wizardnet972/angular4-with-universal-seed-a477237a1995)
 
 **`universal-seed`** is a seed project for Angular Universal apps following the common patterns and [best practices](https://angular.io/styleguide) in file and application organization, providing the following features:
 
